@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Silverlake</title>
+    <link rel="stylesheet" href="css/silverlake.css">
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        color: black;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    table, td {
+        border: 1px solid #ccc;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    input[type="text"] {
+        width: 500px; /* Set the desired width */
+        border-radius: 5px; /* Optional: Add rounded corners */
+        border-width: 1px;
+    }
+
+    label {
+        color: white;
+    }
+
+    .form-column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .flex-details {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+</style>
+<body>
+    <div class="logo">
+        <img src="images/logo.png" alt="Silverlake logo">
+    </div>
+
+    <header>
+    </header>
+
+    <div class="page-wrap">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="silverlakeparkmap.html">Our Park Map</a></li>
+                <li><a href="silverlaketicketpage.html">Tickets</a></li>
+                <li><a href="silverlakeattractions.html">Attractions</a></li>
+            </ul>
+        </nav>
+
+        <div class="table">
+            <main>
+                <table border="1">
+                    <tr>
+                        <td>Ticket Type</td>
+                        <td>Online Price</td>
+                        <td>Pay on the Day Price</td>
+                    </tr>
+                    <tr>
+                        <td>Adult (14 years +)</td>
+                        <td>£19.00</td>
+                        <td>£24.00</td>
+                    </tr>
+                    <tr>
+                        <td>Child (4-13 years)</td>
+                        <td>£13.00</td>
+                        <td>£16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Under 4 years</td>
+                        <td>Free</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>Seniors (Over 60)</td>
+                        <td>£12.00</td>
+                        <td>£12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Disabled Adult (14 years +) Speed Pass</td>
+                        <td>£19.00</td>
+                        <td>£24.00</td>
+                    </tr>
+                    <tr>
+                        <td>Disabled Child (4-13 years) Speed Pass</td>
+                        <td>£13.00</td>
+                        <td>£16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pregnancy Rate</td>
+                        <td>£10.00</td>
+                        <td>£10.00</td>
+                    </tr>
+                </table>
+
+                <div id="box5">
+                    <p>Want to try our brand new merchandise? If you come down before March 3rd and use the code "INB4SUMMER" you can get 50% off this shirt or any other clothing/accessories.</p>
+                </div>
+
+                <div class="merch">
+                    <img src="images/merch-1.png" alt="merchandise">
+                    <img src="images/merch-2.png" alt="merchandise">
+                    <img src="images/merch-3.png" alt="merchandise">
+                </div>
+
+                <div id="box12">
+                    <h3>Personal Details</h3>
+
+                    
+                    <form action="bookingform">
+                        <label>Email</label><br><br>
+                        <input type="text" id="email" name="email" placeholder="Email Address..">
+                        <p>We will use your email to send you promotional offers for our park attractions as well as your booking form and reference. You can turn off email updates later in settings.</p>
+                        <p>Create an account so that you are able to log back in and review your booking.</p>
+                        <div class="form-column">
+                        <label>Name</label>
+                            <select name="dates">
+                                <option value="title">Title</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Master">Master</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <input type="text" id="firstname" name="firstname" placeholder="First Name..">
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name..">
+                            <label>Address</label>
+                            <input type="text" id="address" name="address" placeholder="Address">
+                            <label>Password</label>
+                            <input type="text" id="password" name="password" placeholder="New Password..">
+                            <label>Confirm Password</label>
+                            <input type="text" id="passwordconfirm" name="passwordconfirm" placeholder="Confirm New Password..">
+                        </div>
+                    </form>
+                </div>
+
+                <div id="box4">
+                    <h3>Purchase Details</h3>
+                    <div class="purchase-detail">
+                        <form action="">
+                            <label><b>Number of Adults</b></label><br><br>
+                            <select name="adults">
+                                <option value="Select Number">Select Number</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5+">5+</option>
+                            </select>
+                            <br><br>
+                            <label><b>Number of Children</b></label><br><br>
+                            <select name="children">
+                                <option value="Select Number">Select Number</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8+">8+</option>
+                            </select><br>
+                            <label><br><b>Which pass would you like to purchase?</b></label><br>
+                            <label><br><input type="checkbox" name="choice" value="Year"><b>Year Pass</b></label><br>
+                            <label><br><input type="checkbox" name="choice" value="Month"><b>Month Pass</b></label><br>
+                            <label><br><input type="checkbox" name="choice" value="Day"><b>Day Pass</b></label><br>
+                            <label><br><input type="checkbox" name="choice" value="Family Pack"><b>Family Pack Pass</b></label>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="box6">
+                    <h3>Card Details</h3>
+                    <div class="card-details">
+                    <form action="">
+                        <div class="flex-details">
+                            <label>Card Type</label>
+                            <select name="cardtype">
+                                <option value="Select Card Type">Card Type</option>
+                                <option value="Visa">Visa</option>
+                                <option value="AmericanExpress">American Express</option>
+                                <option value="Maestro">Maestro</option>
+                            </select>
+                            <label>Card Number</label>
+                            <input type="text" id="carddetails" name="carddetails" placeholder="16 Digit Card Number..">
+                            <label>CVV Number</label>
+                            <input type="text" id="ccvnumber" name="ccvnumber" placeholder="CVV Number..">
+                            <button type="submit" class="signup2">Submit All</button>
+                            <label>Expiration Date</label>
+                            <input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YY">
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
